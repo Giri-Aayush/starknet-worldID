@@ -16,12 +16,21 @@ export default defineConfig({
   title: 'Docs',
   sidebar: [
     {
-      text: 'Getting Started',
-      link: '/getting-started',
+      text: 'Introduction',
+      items: [
+        { text: 'Overview', link: '/overview' },
+        { text: 'Why It Matters', link: '/why-it-matters' },
+        { text: 'Getting Started', link: '/getting-started' },
+      ]
     },
     {
-      text: 'Example',
-      link: '/example',
+      text: 'Guides',
+      items: [
+        { text: 'Pre Requisites', link: '/prerequisites' },
+        { text: 'Bridge Setup', link: '/setup' },
+        { text: 'Verification', link: '/verification' },
+      ]
     },
   ],
 })
+
