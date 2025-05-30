@@ -8,11 +8,6 @@ export default defineConfig({
     height: '30px',
     content: '🚧 Docs are a work in progress. Thanks for your patience as we improve them!',
   },
-  aiCta: {  
-    query({ location }) { 
-      return `Please research and analyze this page: ${location} so I can ask you questions about it.`
-    } 
-  },
   title: 'Docs',
   sidebar: [
     {
@@ -29,6 +24,14 @@ export default defineConfig({
         { text: 'Pre Requisites', link: '/prerequisites' },
         { text: 'Bridge Setup', link: '/setup' },
         { text: 'Verification', link: '/verification' },
+      ]
+    },
+    {
+      text: 'Architecture',
+      items: [
+        { text: 'System Overview', link: '/system-overview' },
+        { text: 'L1 Components', link: '/l1-components' },
+        { text: 'L2 Components', link: '/l2-components' },
       ]
     },
   ],
